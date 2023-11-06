@@ -1,0 +1,42 @@
+@import "../../utilities/variables";
+
+$gameWidth: 12rem;
+$gamesGap: 15px;
+
+.carousel{
+    overflow: hidden;
+    .gradient{
+        width: inherit;
+        background-image: linear-gradient(to right, rgba($bgThemeColorRGB, 1), rgba(255, 0, 0, 0) 30%, rgba(255, 0, 0, 0) 70%, rgba($bgThemeColorRGB, 1));
+        .games{
+            width: max-content;
+            display: flex;
+            position: relative;
+            z-index: -1;
+            gap: 15px;
+            animation: carousel 5s infinite linear;
+        }
+    }
+}
+
+.game {
+    height: 18rem;
+    width: $gameWidth;
+    display: block;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@keyframes carousel {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(($gameWidth + $gamesGap) * -1));
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../utilities/variables";
+@import "../../utilities/fonts";
+
+.btn {
+    background-color: $accentColor;
+    width: max-content;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s ease;
+
+    .btn-text {
+        font-family: $Raleway, -apple-system;
+        font-size: 20px;
+    }
+
+    &:hover {
+        background-color: white;
+        border-color: $accentColor;
+        box-shadow: 0 0 25px $accentColor;
+
+        .btn-text {
+            color: $accentColor;
+        }
+    }
+}

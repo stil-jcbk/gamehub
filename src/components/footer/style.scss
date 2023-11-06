@@ -1,0 +1,16 @@
+@import "../../utilities/variables";
+@import "../../utilities/fonts";
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-top: 2px solid $accentColor;
+    margin-top: 50px;
+
+    .text {
+        margin: 0;
+        font-family: $Raleway, -apple-system;
+    }
+}

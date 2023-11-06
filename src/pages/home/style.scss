@@ -1,0 +1,145 @@
+@import "../../utilities/variables";
+@import "../../utilities/fonts";
+
+.special {
+    text-decoration: underline;
+    text-decoration-color: $accentColor;
+    text-decoration-thickness: 5px;
+}
+
+#section-land {
+    height: 36rem;
+    overflow: hidden;
+
+    .content {
+        margin: 100px;
+        position: relative;
+        z-index: 1;
+        font-family: $Raleway;
+
+        .title {
+            font-size: 4rem;
+            font-family: $FugazOne;
+            margin-bottom: 0;
+        }
+
+        .description {
+            margin-left: 50px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            max-width: 40%;
+        }
+    }
+
+    .video-container {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        overflow: hidden;
+        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba($bgThemeColorRGB, 1));
+    }
+
+    video {
+        position: relative;
+        z-index: -2;
+        filter: sepia(1) hue-rotate(160deg) contrast(.5) brightness(.6) saturate(4);
+    }
+}
+
+#section-localization {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: $Raleway;
+    color: white;
+
+    .title {
+        margin-top: 0;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .address {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}
+
+#section-features {
+    margin: 4rem 100px 0 100px;
+    //    margin: 0 100px;
+
+    .container {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
+        gap: 20px;
+        column-gap: 50px;
+    }
+}
+
+#section-games {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        font-size: 2.5rem;
+        font-family: $Raleway;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 1230px) {
+    #section-features {
+        .container {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    }
+
+    #section-games{
+        .carousel{
+            width: 70vw;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    #section-land {
+        height: 30rem;
+        text-align: center;
+
+        .content {
+            margin: 1rem;
+
+            .description {
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #section-land {
+        .content {
+            .title {
+                font-size: 14vw;
+            }
+        }
+    }
+
+    #section-localization{
+        .title{
+            font-size: 10vw;
+        }
+    }
+
+    #section-games{
+        .title{
+            font-size: 8vw;
+        }
+    }
+}
