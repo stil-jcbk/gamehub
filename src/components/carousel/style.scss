@@ -2,6 +2,7 @@
 
 $gameWidth: 12rem;
 $gamesGap: 15px;
+$gameBorder: 2px;
 
 .carousel{
     overflow: hidden;
@@ -24,6 +25,8 @@ $gamesGap: 15px;
     width: $gameWidth;
     display: block;
     overflow: hidden;
+    border: 2px solid $accentColor;
+    border-radius: 15px;
 
     img {
         width: 100%;
@@ -37,6 +40,6 @@ $gamesGap: 15px;
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(($gameWidth + $gamesGap) * -1));
+        transform: translateX(calc(($gameWidth + $gamesGap + $gameBorder*2) * -1));
     }
 }
