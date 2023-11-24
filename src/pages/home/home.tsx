@@ -14,7 +14,7 @@ export default function HomePage(){
                     <p className="description">Pierwsze miejsce we Wrocławiu gdzie za granie w twoje ulubione gry możesz wygrać nagrody</p>    
                 </div>
                 <div className="video-container">
-                    <video loop autoPlay muted src="https://basestack.gg/wp-content/uploads/2023/04/20211027-Gaming-Cafe_1.mp4"></video>
+                    <video loop autoPlay playsInline muted src="https://basestack.gg/wp-content/uploads/2023/04/20211027-Gaming-Cafe_1.mp4"></video>
                 </div>
             </Section>
             <Section name="localization">
