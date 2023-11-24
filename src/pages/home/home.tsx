@@ -1,11 +1,33 @@
-import "./style.scss"
+import {gsap} from "gsap";
+import "./style.scss";
 import Section from "../../components/section/section";
 import Feature from "../../components/feature/feature";
 import Button from "../../components/button/button";
 import Carousel from "../../components/carousel/carousel";
 import Footer from "../../components/footer/footer";
+import {LegacyRef, useLayoutEffect, useRef} from "react";
 
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 export default function HomePage(){
+    useLayoutEffect(() => {
+        const features: HTMLElement[] = gsap.utils.toArray(".feature")
+        features.forEach((feature, index) => {
+            console.log(feature)
+            gsap.set(feature, {opacity: 0, y:50})
+            gsap.to(feature, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: index * 0.25,
+                scrollTrigger: {
+                    trigger: "#section-features",
+                    start: "top 80%",
+                },
+            })
+        })
+    }, [])
+
     return(
         <div>
             <Section name="land">
