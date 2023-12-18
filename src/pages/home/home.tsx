@@ -51,13 +51,13 @@ export default function HomePage(){
             </Section>
             <Section name="features">
                 <div className="container">
-                    <Feature text="Wydajne komputery" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/High-spec-PCs.jpg"/>
-                    <Feature text="Nagrody" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/Cafe-food-drink-680x400.jpg"/>
-                    <Feature text="Rezerwacje" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/High-spec-PCs.jpg"/>
-                    <Feature text="Ranking" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/Cafe-food-drink-680x400.jpg"/>
-                    <Feature text="Strefa gastro" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/High-spec-PCs.jpg"/>
-                    <Feature text="Strefa konsol" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/High-spec-PCs.jpg"/>
-                    <Feature text="Turnieje" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/Cafe-food-drink-680x400.jpg"/>
+                    <Feature text="Wydajne komputery" imgSrc="/img1.png"/>
+                    <Feature text="Nagrody" imgSrc="/img2.png"/>
+                    <Feature text="Rezerwacje" imgSrc="/img3.png"/>
+                    <Feature text="Ranking" imgSrc="/img4.png"/>
+                    <Feature text="Strefa gastro" imgSrc="/img5.png"/>
+                    <Feature text="Strefa konsol" imgSrc="/img6.png"/>
+                    <Feature text="Turnieje" imgSrc="/img7.png"/>
                 </div>
             </Section>
             <Section name="games">
