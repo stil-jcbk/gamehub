@@ -32,7 +32,7 @@ export default function HomePage(){
         <div>
             <Section name="land">
                 <div className="content">
-                    <h1 className="title">GRAJ<br/>STREAMUJ<br/><span className="special">WYGRYWAJ</span></h1>
+                    <h1 className="title">GRAJ<br/>TRENUJ<br/><span className="special">WYGRYWAJ</span></h1>
                     <p className="description">Pierwsze miejsce we Wrocławiu gdzie za granie w twoje ulubione gry możesz wygrać nagrody</p>    
                 </div>
                 <div className="video-container">
@@ -56,7 +56,6 @@ export default function HomePage(){
                     <Feature text="Rezerwacje" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/High-spec-PCs.jpg"/>
                     <Feature text="Ranking" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/Cafe-food-drink-680x400.jpg"/>
                     <Feature text="Strefa gastro" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/High-spec-PCs.jpg"/>
-                    <Feature text="Pokoje do streamingu" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/Cafe-food-drink-680x400.jpg"/>
                     <Feature text="Strefa konsol" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/High-spec-PCs.jpg"/>
                     <Feature text="Turnieje" imgSrc="https://basestack.gg/wp-content/uploads/2023/04/Cafe-food-drink-680x400.jpg"/>
                 </div>
