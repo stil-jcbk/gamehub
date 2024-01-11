@@ -7,6 +7,7 @@ export default function Navbar(){
             <img className="logo" src="/logo.svg" alt=""/>
             <div className="routes">
                 <Link to="/">HOME</Link>
+                <Link to="/auth?type=login">LOGIN</Link>
             </div>
         </div>
     )
