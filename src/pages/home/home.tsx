@@ -44,9 +44,9 @@ export default function HomePage(){
                 <div className="address">
                     GameHub
                     <br />
-                    Rynek 20
+                    Legnicka <span className="number">59D</span>
                     <br/>
-                    Wrocław 50-450
+                    Wrocław <span className="number">54</span>-<span className="number">203</span>
                 </div>
             </Section>
             <Section name="features">
