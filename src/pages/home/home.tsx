@@ -55,7 +55,6 @@ export default function HomePage(){
                     <Feature text="Nagrody" imgSrc="/img2.png"/>
                     <Feature text="Rezerwacje" imgSrc="/img3.png"/>
                     <Feature text="Ranking" imgSrc="/img4.png"/>
-                    <Feature text="Strefa gastro" imgSrc="/img5.png"/>
                     <Feature text="Strefa konsol" imgSrc="/img6.png"/>
                     <Feature text="Turnieje" imgSrc="/img7.png"/>
                 </div>
